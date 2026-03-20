@@ -1,4 +1,4 @@
-Setting up the Niri animations script and adding a button for Otter-WM
+Setting up the Niri animations script and adding Otter-WM buttom
 ======================================================================
 
 Add the animations folder to ~/.config/niri/
