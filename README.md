@@ -19,7 +19,7 @@ include "animations/current_animation.kdl"
 
 Add a button in otter-shell
 ----------------------------
-Button animation command: niri-anim-toggle
+Button animation command: niri-anim-toggle.sh
 
 WARNING:
 --------
