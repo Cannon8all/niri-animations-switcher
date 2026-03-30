@@ -5,7 +5,7 @@ Add the animations folder to ~/.config/niri/
 
 Add the niri-anim-toggle.sh script to ~/.local/bin/
 
-link one of the animations one time only so niri knows where to start
+link one of the animations one time only so the script has a place to start
 ---------------------------------------------------------------------
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
