@@ -23,4 +23,4 @@ Button animation command: niri-anim-toggle.sh
 
 WARNING:
 --------
-I made this script with the help of gemini, this was just for a personal project.
+I made this script with the help of a clanker (gemini), this was just for a personal project.
