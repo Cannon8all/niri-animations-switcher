@@ -21,6 +21,8 @@ Add a button in otter-shell
 ----------------------------
 Button animation command: niri-anim-toggle.sh
 
+!! Logout and back in !!
+
 WARNING:
 --------
 I made this script with the help of a clanker (gemini), this was just for a personal project.
