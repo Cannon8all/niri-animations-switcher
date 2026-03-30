@@ -34,7 +34,8 @@ https://github.com/jgarza9788
 Blur
 Glitch (01)
 smoke
-energize_b 
+energize_b
+tv_crt
 
 https://github.com/XansiVA
 bloom.kdl
