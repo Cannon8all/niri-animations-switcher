@@ -24,12 +24,12 @@ ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_a
 *    `chmod +x ~/.local/bin/niri-anim-toggle.sh`
 
 # Create the first link (required once)
-*    `ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl`
+    `ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl`
 
 3. Niri Configuration
 Open your ~/.config/niri/config.kdl. Remove the existing animations { ... } section and replace it with the following line:
 
-*    include "animations/current_animation.kdl"
+    include "animations/current_animation.kdl"
 
 4. Otter-Shell Integration
 Add a button to your Otter-Shell configuration with the following command:
