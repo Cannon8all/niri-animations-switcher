@@ -41,6 +41,7 @@ niri-anim-toggle.sh
 ------------------
 ⚠️ Warning
 This script was created with the help of a clanker for a personal project. Use at your own risk.
+
 ------------------
 
 Credits
