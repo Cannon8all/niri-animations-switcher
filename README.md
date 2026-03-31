@@ -1,16 +1,17 @@
-# Niri Animation Switcher 🎬
-
-A lightweight Bash script to toggle between different animation profiles (`.kdl` files) for the **Niri compositor**. The script rotates through all available animation files in your configuration directory and updates a symbolic link that Niri can source dynamically.
-
-## ✨ Features
-* **Sequential Rotation**: Automatically cycles through all `.kdl` files found in your animations folder.
-* **Smart Notifications**: Sends a desktop notification using `notify-send` with the name of the newly activated animation.
-* **Notification Replacement**: Uses a fixed ID (`-r 101`) to replace the previous notification, preventing screen clutter.
-* **Safety Checks**: Verifies the directory exists and contains valid files before attempting to switch.
-
-## 🛠️ Installation
-
-1. **Create the directory**:
-   Ensure your animation files are stored in the expected location:
-   ```bash
-   mkdir -p ~/.config/niri/animations
+Setting up the Niri animations script and Otter-WM buttom
+Add the animations folder to ~/.config/niri/
+Add the niri-anim-toggle.sh script to ~/.local/bin/
+link one of the animations one time only so the script has a place to start
+ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
+Make the script executables
+udo chmod +x ~/.local/bin/niri-anim-toggle.sh
+Edit your niri config.kdl, remove the animation section and add in its place
+include "animations/current_animation.kdl"
+Add a button in otter-shell
+Button animation command: niri-anim-toggle.sh
+!! Logout and back in !!
+WARNING:I made this script with the help of a clanker (gemini), this was just for a personal project.
+Credits for the animations
+https://github.com/jhsuditcher-glitch
+https://github.com/jgarza9788 Blur Glitch (01) smoke energize_b tv_crt
+https://github.com/XansiVA bloom.kdl burn-ashes.kdl burn-multicolor.kdl burn.kdl fold-window.kdl glitch.kdl pixelate.kdl pop-drop.kdl ribbons.kdl roll-drop.kdl swipe-window.kdl unravel.kdland
