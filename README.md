@@ -10,7 +10,6 @@ This guide explains how to set up the Niri animations script and integrate it wi
 
 ### 2. Initialize the Script
 Create a symbolic link so the script has a starting point:
-```bash
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
 ### Step 3: Permissions & Configuration
