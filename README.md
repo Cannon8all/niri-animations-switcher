@@ -21,19 +21,16 @@ Make the script executable and create the initial symlink to give the script a s
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 ```bash
 # Make executable
-chmod +x ~/.local/bin/niri-anim-toggle.sh
+*    chmod +x ~/.local/bin/niri-anim-toggle.sh
 
 # Create the first link (required once)
-ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
+*    ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-Wees voorzichtig met code.
 3. Niri Configuration
 Open your ~/.config/niri/config.kdl. Remove the existing animations { ... } section and replace it with the following line:
-kdl
 
-include "animations/current_animation.kdl"
+*    include "animations/current_animation.kdl"
 
-Wees voorzichtig met code.
 4. Otter-Shell Integration
 Add a button to your Otter-Shell configuration with the following command:
 
