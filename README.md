@@ -28,8 +28,14 @@ include "animations/current_animation.kdl"
 Add a button in otter-shell
 Button animation command: niri-anim-toggle.sh
 !! Logout and back in !!
-WARNING:I made this script with the help of a clanker (gemini), this was just for a personal project.
-Credits for the animations
-https://github.com/jhsuditcher-glitch
-https://github.com/jgarza9788 Blur Glitch (01) smoke energize_b tv_crt
-https://github.com/XansiVA bloom.kdl burn-ashes.kdl burn-multicolor.kdl burn.kdl fold-window.kdl glitch.kdl pixelate.kdl pop-drop.kdl ribbons.kdl roll-drop.kdl swipe-window.kdl unravel.kdland
+
+## Credits & Disclaimer
+
+> [!CAUTION]
+> This script was created with the help of a clanker for a personal project. Use at your own risk.
+
+### Animation Sources:
+
+*   [jhsuditcher-glitch](https://github.com)
+*   [jgarza9788](https://github.com): *Blur, Glitch (01), smoke, energize_b, tv_crt*
+*   [XansiVA](https://github.com): *bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel*
