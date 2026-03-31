@@ -37,6 +37,8 @@ niri-anim-toggle.sh
     Logout and back in (or restart Niri) for the configuration changes to take effect.
 
 
+
+------------------
 ⚠️ Warning
 This script was created with the help of a clanker for a personal project. Use at your own risk.
 
