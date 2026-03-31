@@ -1,59 +1,47 @@
-Niri Animation Toggle
+Niri Animation Switcher
+A lightweight utility script for the Niri compositor that allows you to dynamically cycle through different animation presets. Perfect for users who want to change their desktop's visual flair on the fly using a script or a shell button.
+🚀 Features
 
-A bash script that cycles through Niri window manager animations with a single command. Perfect for quick visual switching without restarting.
-Features
+    Automatic Cycling: Rotates through all .kdl files in your animations folder.
+    Visual Feedback: Sends a system notification showing the name of the active animation.
+    Easy Integration: Designed to work seamlessly with Otter-Shell or via keybindings.
 
-    Cycle through animations – Press a button to switch to the next animation in your collection
-    Loop seamlessly – Automatically wraps back to the first animation after the last one
-    Desktop notifications – Get instant feedback on which animation is now active
-    Symlink-based – Uses a single symlink that Niri reads, so no config editing needed per switch
+🛠️ Installation & Setup
+1. Place the Files
+Ensure the files are in the correct directories:
 
-Prerequisites
+    Move the animations/ folder to ~/.config/niri/
+    Move the niri-anim-toggle.sh script to ~/.local/bin/
 
-    Niri window manager installed
-    notify-send (usually included with most Linux distributions)
-    Animation .kdl files in ~/.config/niri/animations/
-
-Installation
-1. Create the script
-
-Save the script as ~/.local/bin/niri-anim-toggle.sh
-2. Make it executable
+2. Configure Permissions & Symlink
+Make the script executable and create an initial symbolic link so the script has a starting point:
 bash
 
+# Make the script executable
 chmod +x ~/.local/bin/niri-anim-toggle.sh
 
-3. Create the initial symlink
-bash
-
+# Create the initial link (one-time setup)
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-(Replace pop-drop.kdl with your preferred starting animation)
-4. Update Niri configuration
-
-Open ~/.config/niri/config.kdl and replace your animations { ... } section with:
+Wees voorzichtig met code.
+3. Edit Niri Configuration
+Open your ~/.config/niri/config.kdl file. Remove your existing animations { ... } section and replace it with this include line:
 kdl
 
 include "animations/current_animation.kdl"
 
-5. Bind to a hotkey (optional)
+Wees voorzichtig met code.
+4. Otter-Shell Integration
+Add a new button in your Otter-Shell configuration:
 
-Add to your Niri config:
-kdl
+    Button Animation Command: niri-anim-toggle.sh
 
-binds {
-    Mod+Shift+A { spawn "niri-anim-toggle.sh"; }
-}
+    [!IMPORTANT]
+    Logout and back in (or restart Niri) for the configuration changes to take effect.
 
-Or integrate with Otter-Shell or another launcher using the command: niri-anim-toggle.sh
-How it works
+Credits
+The animations in this repository are by the following creators:
 
-    Scans ~/.config/niri/animations/ for all .kdl files
-    Identifies the currently active animation via the current_animation.kdl symlink
-    Updates the symlink to point to the next animation in alphabetical order
-    Sends a desktop notification showing the new animation name
-    Loops back to the first animation after the last one
-
-Requirements for Niri to apply changes
-
-You may need to log out and back in or restart Niri for animation changes to take effect, depending on your Niri version.
+    jhsu: ditcher-glitch
+    jgarza9788: Blur Glitch (01), smoke, energize_b, tv_crt
+    XansiVA: bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel
