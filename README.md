@@ -23,7 +23,7 @@ chmod +x ~/.local/bin/niri-anim-toggle.sh
 ### 4. Create the initial link (one-time setup)
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-### 3. Edit Niri Configuration
+### 5. Edit Niri Configuration
 Open your `~/.config/niri/config.kdl` file. Remove your existing `animations { ... }` section and replace it with this include line:
 
 ```kdl
