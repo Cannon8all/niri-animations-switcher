@@ -1,41 +1,49 @@
-# Setting up Niri Animations & Otter-WM Button
+# Niri Animation Switcher
 
-This guide explains how to set up the Niri animations script and integrate it with an Otter-shell button.
+A handy script to dynamically toggle between different animation presets in the Niri compositor. Change your desktop's visual style with a single click (via Otter-Shell) or a keyboard shortcut.
 
-## Installation Steps
+## 🌟 Features
 
-### 1. File Placement
-*   Add the `animations` folder to `~/.config/niri/`
-*   Add the `niri-anim-toggle.sh` script to `~/.local/bin/`
+*   **Automatic Cycling:** Cycles through all `.kdl` files in your animations folder.
+*   **System Notifications:** Sends a notification with the name of the active animation.
+*   **Simple Integration:** Easy to use with Otter-Shell or custom keybindings.
 
-### 2. Initialize the Script
-Create a symbolic link so the script has a starting point:
+## 🛠️ Installation
+
+### 1. Place the files
+Clone this repository or download the files manually:
+*   Place the `animations/` folder in `~/.config/niri/`.
+*   Place the script `niri-anim-toggle.sh` in `~/.local/bin/`.
+
+### 2. Set up the script
+Make the script executable and create the initial symlink to give the script a starting point:
+
 ```bash
+# Make executable
+chmod +x ~/.local/bin/niri-anim-toggle.sh
+
+# Create the first link (required once)
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-### Step 3: Permissions & Configuration
+Wees voorzichtig met code.
+3. Niri Configuration
+Open your ~/.config/niri/config.kdl. Remove the existing animations { ... } section and replace it with the following line:
+kdl
 
-To make the script work and integrate it into your Niri setup, follow these steps:
-
-1. **Make the script executable:**
-   Run the following command in your terminal:
-   ```bash
-   chmod +x ~/.local/bin/niri-anim-toggle.sh
-
-
-Edit your niri config.kdl, remove the animation section and add in its place
 include "animations/current_animation.kdl"
-Add a button in otter-shell
-Button animation command: niri-anim-toggle.sh
-!! Logout and back in !!
 
-## Credits & Disclaimer
+Wees voorzichtig met code.
+4. Otter-Shell Integration
+Add a button to your Otter-Shell configuration with the following command:
 
-> [!CAUTION]
-> This script was created with the help of a clanker for a personal project. Use at your own risk.
+    Command: niri-anim-toggle.sh
 
-### Animation Sources:
+    [!IMPORTANT]
+    Log out and back in (or restart Niri) to activate the changes.
 
-*   [jhsuditcher-glitch](https://github.com)
-*   [jgarza9788](https://github.com): *Blur, Glitch (01), smoke, energize_b, tv_crt*
-*   [XansiVA](https://github.com): *bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel*
+📜 Credits
+The animations in this project come from the following creators:
+
+    jhsu: ditcher-glitch
+    jgarza9788: Blur Glitch (01), smoke, energize_b, tv_crt
+    XansiVA: bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel
