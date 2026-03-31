@@ -21,6 +21,7 @@ Make the script executable and create an initial symbolic link so the script has
 chmod +x ~/.local/bin/niri-anim-toggle.sh
 
 ### 4. Create the initial link (one-time setup)
+```
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
 ### 5. Edit Niri Configuration
