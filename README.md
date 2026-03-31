@@ -5,7 +5,7 @@ A lightweight utility script for the [Niri compositor](https://github.com) that 
 ## 🚀 Features
 *   **Automatic Cycling**: Rotates through all `.kdl` files in your animations folder.
 *   **Visual Feedback**: Sends a system notification showing the name of the active animation.
-*   **Easy Integration**: Designed to work seamlessly with **Otter-Shell** or via keybindings.
+*   **Easy Integration**: Designed to work seamlessly with **Otter-Shell** and **Otter-Notifications***
 
 ## 🛠️ Installation & Setup
 
