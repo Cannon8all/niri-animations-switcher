@@ -2,12 +2,12 @@
 
 A lightweight utility script for the [Niri compositor](https://github.com/niri-wm/niri) that allows you to dynamically cycle through different animation presets. Perfect for users who want to change their desktop's visual flair on the fly using a script or a shell button.
 
----------
 ## 🚀 Features
 *   **Automatic Cycling**: Rotates through all `.kdl` files in your animations folder.
 *   **Visual Feedback**: Sends a system notification showing the name of the active animation.
 *   **Easy Integration**: Designed to work seamlessly with **Otter-Shell** and **Otter-Notifications**
 
+---  
 ## 🛠️ Installation & Setup
 
 ### 1. Place the Files
