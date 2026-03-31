@@ -12,7 +12,7 @@ A lightweight utility script for the [Niri compositor](https://github.com) that 
 ### 1. Place the Files
 Ensure the files are in the correct directories:
 *   Move the `animations/` folder to `~/.config/niri/`
-*   Move the `niri-anim-toggle.sh` script to `~/.local/bin/
+*   Move the `niri-anim-toggle.sh` script to ~/.local/bin/
 
 ### 2. Make the script executable
 ```
