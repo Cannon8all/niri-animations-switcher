@@ -33,15 +33,16 @@ Button Animation Command:
 ```
 niri-anim-toggle.sh
 ```
-    [!IMPORTANT]
+[!IMPORTANT]
     Logout and back in (or restart Niri) for the configuration changes to take effect.
+
 
 ⚠️ Warning
 This script was created with the help of a clanker for a personal project. Use at your own risk.
 
+
 Credits
 The animations in this repository are by the following creators:
-
 *    **jhsu**: ditcher-glitch
 *    **jgarza9788**: Blur Glitch (01), smoke, energize_b, tv_crt
-*    **XansiVA: bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel
+*    **XansiVA**: bloom, burn-ashes, burn-multicolor, burn, fold-window, glitch, pixelate, pop-drop, ribbons, roll-drop, swipe-window, unravel
