@@ -13,7 +13,7 @@ Create a symbolic link so the script has a starting point:
 ```bash
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-###3. Make the script executable
+### 3. Make the script executable
 ```bash
 sudo chmod +x ~/.local/bin/niri-anim-toggle.sh
 
