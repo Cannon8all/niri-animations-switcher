@@ -1,10 +1,25 @@
-Setting up the Niri animations script and Otter-WM buttom
-Add the animations folder to ~/.config/niri/
-Add the niri-anim-toggle.sh script to ~/.local/bin/
-link one of the animations one time only so the script has a place to start
+# Setting up Niri Animations & Otter-WM Button
+
+This guide explains how to set up the Niri animations script and integrate it with an Otter-shell button.
+
+## Installation Steps
+
+### 1. File Placement
+*   Add the `animations` folder to `~/.config/niri/`
+*   Add the `niri-anim-toggle.sh` script to `~/.local/bin/`
+
+### 2. Initialize the Script
+Create a symbolic link so the script has a starting point:
+```bash
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
-Make the script executables
-udo chmod +x ~/.local/bin/niri-anim-toggle.sh
+
+###3. Make the script executable
+```bash
+sudo chmod +x ~/.local/bin/niri-anim-toggle.sh
+
+
+
+
 Edit your niri config.kdl, remove the animation section and add in its place
 include "animations/current_animation.kdl"
 Add a button in otter-shell
