@@ -12,20 +12,18 @@ A lightweight utility script for the [Niri compositor](https://github.com) that 
 ### 1. Place the Files
 Ensure the files are in the correct directories:
 *   Move the `animations/` folder to `~/.config/niri/`
-*   Move the `niri-anim-toggle.sh` script to `~/.local/bin/`
+*   Move the `niri-anim-toggle.sh` script to `~/.local/bin/
 
-### 2. Configure Permissions & Symlink
-Make the script executable and create an initial symbolic link so the script has a starting point:
-
-### 3. Make the script executable
+### 2. Make the script executable
+```
 chmod +x ~/.local/bin/niri-anim-toggle.sh
-
-### 4. Create the initial link (one-time setup)
+```
+### 3. Create the initial link (one-time setup)
 ```
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
-
-### 5. Edit Niri Configuration
+```
+### 4. Edit Niri Configuration
 Open your `~/.config/niri/config.kdl` file. Remove your existing `animations { ... }` section and replace it with this include line:
-
-```kdl
+```
 include "animations/current_animation.kdl"
+```
