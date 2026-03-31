@@ -7,7 +7,6 @@ A lightweight utility script for the [Niri compositor](https://github.com/niri-w
 *   **Visual Feedback**: Sends a system notification showing the name of the active animation.
 *   **Easy Integration**: Designed to work seamlessly with **Otter-Shell** and **Otter-Notifications**
 
----  
 ## 🛠️ Installation & Setup
 
 ### 1. Place the Files
