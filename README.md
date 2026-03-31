@@ -17,7 +17,7 @@ Clone this repository or download the files manually:
 
 ### 2. Set up the script
 Make the script executable and create the initial symlink to give the script a starting point:
-
+ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 ```bash
 # Make executable
 chmod +x ~/.local/bin/niri-anim-toggle.sh
