@@ -13,11 +13,14 @@ Create a symbolic link so the script has a starting point:
 ```bash
 ln -s ~/.config/niri/animations/pop-drop.kdl ~/.config/niri/animations/current_animation.kdl
 
-### 3. Make the script executable
-```bash
-sudo chmod +x ~/.local/bin/niri-anim-toggle.sh
+### Step 3: Permissions & Configuration
 
+To make the script work and integrate it into your Niri setup, follow these steps:
 
+1. **Make the script executable:**
+   Run the following command in your terminal:
+   ```bash
+   chmod +x ~/.local/bin/niri-anim-toggle.sh
 
 
 Edit your niri config.kdl, remove the animation section and add in its place
